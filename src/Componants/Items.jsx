@@ -3,7 +3,7 @@ import css from "../Style/Items.module.css";
 const Items = ({ foodItems, onDeleteClick }) => {
   return (
     <ul className={`list-group ${css["items-container"]}`}>
-      {foodItems.map((item, index) => (
+      {foodItems?.map((item, index) => (
         <li key={index} className="list-group-item">
           {item}
           <button
